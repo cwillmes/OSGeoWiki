@@ -1,5 +1,0 @@
-== Generated Model Statistics ==
-{{{statistics}}}
-==Tree Outline==
-{{{tree}}}
-__NOTOC__
