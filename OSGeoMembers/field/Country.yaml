@@ -1,0 +1,5 @@
+title: Country
+description: A Country.
+
+type: string
+format: Page

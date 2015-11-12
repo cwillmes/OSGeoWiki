@@ -1,0 +1,5 @@
+title: LocalChapter
+description: A OSGeo local chapter.
+
+type: string
+format: Page

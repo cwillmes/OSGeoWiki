@@ -1,0 +1,73 @@
+<noinclude>==Description==
+{{#if templatedata}}<templatedata>{{{templatedata}}}</templatedata>
+{{/if~}}
+
+==Usage==
+<pre>\{{ {{~name}}
+{{#each attr}}|{{this.id}}=
+{{/each~}} \}}</pre>
+</noinclude>
+<includeonly>
+
+{{~#if prepend}}{{{prepend}}}{{/if~}}
+
+
+
+{{~#if display_table~}}
+<table class="wikitable formdata formdata-{{name}}">
+    <tr><th colspan="2">{{name}}</th></tr>
+    {{#each attr~}}
+    \{{#if: \{{{ {{~this.id~}} |}}} | <tr><td>'''{{this.title}}'''</td><td data-property="{{this.id}}">{{smw_templ_attr this}}</td></tr> | }}
+    {{/each}}
+</table>
+{{~/if~}}
+
+
+
+{{~#if display_ul~}}
+<div class="wiki-ul formdata formdata-{{name}}">
+{{~#each attr~}}
+\{{#if: \{{{ {{~@key~}} |}}} | * '''{{this.title}}:''' <span data-property="{{this.id}}">{{smw_templ_attr this}}</span> |}}
+{{~/each~}}
+</div>
+{{~/if~}}
+
+
+
+{{~#if display_bootstrap-row~}}
+<div class="bootstrap-row formdata formdata-{{name}}">
+{{~#each attr}}
+
+\{{#if: \{{{ {{~@key~}} |}}} | <div class="row"><div class="col-sm-4 col-md-3 row-label">{{this.title}} </div><div class="col-sm-8 col-md-9 row-value" data-property="{{this.id}}">
+{{smw_templ_attr this}} </div></div> |}}
+{{~/each~}}
+</div>
+{{~/if~}}
+
+
+
+{{~#if display_hidden~}}
+<div class="wiki-hidden formdata formdata-{{name}}" style="display: none;">
+{{~#each attr~}}
+\{{#if: \{{{ {{~@key~}} |}}} | * {{this.title}} <span data-property="{{this.id}}">{{smw_templ_attr this}}</span> |}}
+{{~/each~}}
+</div>
+{{~/if~}}
+
+
+
+{{~#if display_none~}}{{!-- NO DISPLAY --}}{{~/if~}}
+
+
+
+{{~#if append}}{{{append}}}{{/if~}}
+
+
+{{~#if smw_subobject~}}
+{{~smw_subobject modelObj name~}}
+{{~else~}}
+{{smw_set attr}}
+{{~/if~}}
+
+{{~#if category}} [[category:{{category}}]]{{~/if~}}
+{{~#if categories~}}{{#each categories}} [[category:{{this}}]]{{/each~}}{{/if~}}</includeonly>

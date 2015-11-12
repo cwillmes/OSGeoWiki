@@ -1,0 +1,1139 @@
+{
+    "field": {
+        "Address": {
+            "title": "Address",
+            "description": "A postal Address.",
+            "type": "string",
+            "id": "Address",
+            "$filepath": "/field/Address.yaml",
+            "$path": "/field/Address",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "City": {
+            "title": "City",
+            "description": "Á City.",
+            "type": "string",
+            "id": "City",
+            "$filepath": "/field/City.yaml",
+            "$path": "/field/City",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "Coordinate": {
+            "title": "Coordinate",
+            "description": "A location given as WGS 84 coordinate (EPSG:4326).",
+            "type": "string",
+            "format": "Geographic coordinate",
+            "id": "Coordinate",
+            "$filepath": "/field/Coordinate.yaml",
+            "$path": "/field/Coordinate",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "Country": {
+            "title": "Country",
+            "description": "A Country.",
+            "type": "string",
+            "format": "Page",
+            "id": "Country",
+            "$filepath": "/field/Country.yaml",
+            "$path": "/field/Country",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "Email": {
+            "title": "Email",
+            "description": "An Email-Address.",
+            "type": "string",
+            "format": "email",
+            "id": "Email",
+            "$filepath": "/field/Email.yaml",
+            "$path": "/field/Email",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "LocalChapter": {
+            "title": "LocalChapter",
+            "description": "A OSGeo local chapter.",
+            "type": "string",
+            "format": "Page",
+            "id": "LocalChapter",
+            "$filepath": "/field/LocalChapter.yaml",
+            "$path": "/field/LocalChapter",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "Name": {
+            "title": "Name",
+            "description": "Full Name.",
+            "type": "string",
+            "id": "Name",
+            "$filepath": "/field/Name.yaml",
+            "$path": "/field/Name",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "State": {
+            "title": "State",
+            "description": "Administrative region.",
+            "type": "string",
+            "id": "State",
+            "$filepath": "/field/State.yaml",
+            "$path": "/field/State",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        },
+        "Website": {
+            "title": "Website",
+            "description": "A Website.",
+            "type": "string",
+            "format": "url",
+            "id": "Website",
+            "$filepath": "/field/Website.yaml",
+            "$path": "/field/Website",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": ""
+        }
+    },
+    "model": {
+        "OSGeoMember": {
+            "title": "OSGeoMember",
+            "description": "Someone who identifies himself as a member of the OSGeo Foundation.",
+            "required": [
+                "Name",
+                "Coordinate"
+            ],
+            "id": "OSGeoMember",
+            "$filepath": "/model/OSGeoMember.yaml",
+            "$path": "/model/OSGeoMember",
+            "$modelPart": "model",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "$extend": "/field/Name"
+                },
+                "Address": {
+                    "$extend": "/field/Address"
+                },
+                "Country": {
+                    "$extend": "/field/Country"
+                },
+                "State": {
+                    "$extend": "/field/State"
+                },
+                "City": {
+                    "$extend": "/field/City"
+                },
+                "Coordinate": {
+                    "$extend": "/field/Coordinate"
+                },
+                "LocalChapter": {
+                    "$extend": "/field/LocalChapter"
+                },
+                "Email": {
+                    "$extend": "/field/Email"
+                },
+                "Website": {
+                    "$extend": "/field/Website"
+                }
+            }
+        }
+    },
+    "form": {
+        "OSGeoMember": {
+            "title": "OSGeoMember",
+            "id": "OSGeoMember",
+            "$filepath": "/form/OSGeoMember.yaml",
+            "$path": "/form/OSGeoMember",
+            "$modelPart": "form",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "type": "object",
+            "properties": {
+                "OSGeoMember": {
+                    "$extend": "/model/OSGeoMember"
+                }
+            }
+        }
+    },
+    "smw_template": {
+        "OSGeoMember.wikitext": "<noinclude>==Description==\n==Usage==\n<pre>{{OSGeoMember\n|Name=\n|Address=\n|Country=\n|State=\n|City=\n|Coordinate=\n|LocalChapter=\n|Email=\n|Website=\n\\}}</pre>\n</noinclude>\n<includeonly><div class=\"wiki-ul formdata formdata-OSGeoMember\">{{#if: {{{Name|}}} | * '''Name:''' <span data-property=\"Name\">{{{Name|}}}</span> |}}{{#if: {{{Address|}}} | * '''Address:''' <span data-property=\"Address\">{{{Address|}}}</span> |}}{{#if: {{{Country|}}} | * '''Country:''' <span data-property=\"Country\">[[{{{Country|}}}|{{{Country}}}]]</span> |}}{{#if: {{{State|}}} | * '''State:''' <span data-property=\"State\">{{{State|}}}</span> |}}{{#if: {{{City|}}} | * '''City:''' <span data-property=\"City\">{{{City|}}}</span> |}}{{#if: {{{Coordinate|}}} | * '''Coordinate:''' <span data-property=\"Coordinate\">{{{Coordinate|}}}</span> |}}{{#if: {{{LocalChapter|}}} | * '''LocalChapter:''' <span data-property=\"LocalChapter\">[[{{{LocalChapter|}}}|{{{LocalChapter}}}]]</span> |}}{{#if: {{{Email|}}} | * '''Email:''' <span data-property=\"Email\">{{{Email|}}}</span> |}}{{#if: {{{Website|}}} | * '''Website:''' <span data-property=\"Website\">{{{Website|}}}</span> |}}</div> [[Name::{{{Name|}}}| ]] [[Address::{{{Address|}}}| ]] [[Country::{{{Country|}}}| ]] [[State::{{{State|}}}| ]] [[City::{{{City|}}}| ]] [[Coordinate::{{{Coordinate|}}}| ]] [[LocalChapter::{{{LocalChapter|}}}| ]] [[Email::{{{Email|}}}| ]] [[Website::{{{Website|}}}| ]] [[category:OSGeoMember]]\n\n{{OSGeoMemberUserMap-ask}}\n</includeonly>"
+    },
+    "smw_query": {
+        "OSGeoMemberUserMap.ask": "{{#display_map:{{#show: {{FULLPAGENAME}}|?Coordinate}}|width=480|height=280|zoom=8}}",
+        "OSGeoMemberMap.ask": "{{\n#ask:\n[[Category:OSGeoMember]]\n| ?Coordinate\n| ?Name\n| ?Address\n| ?City\n| ?State\n| ?Country\n| ?LocalChapter\n| ?Website\n| ?Email\n| format=leaflet\n}}"
+    },
+    "smw_page": {},
+    "mw_category": {},
+    "statistics": {
+        "inputSize": {
+            "total": 2672,
+            "field": 578,
+            "model": 339,
+            "form": 53,
+            "smw_template": 1468,
+            "smw_query": 234
+        },
+        "$mobo": {
+            "version": "v1.7.0",
+            "timestamp": 1447339665,
+            "date": "2015-11-12 15:47:45"
+        },
+        "benchmark": {
+            "readProject": 11,
+            "expansionLayer": 17,
+            "validateRegistry": 24,
+            "validateExpandedRegistry": 25,
+            "generateGraph": 27
+        },
+        "outputStats": {
+            "property": 9,
+            "category": 1,
+            "form": 1,
+            "template": 6,
+            "page": 0,
+            "total": 17
+        },
+        "inputStats": {
+            "field": 9,
+            "model": 1,
+            "form": 1,
+            "smw_template": 1,
+            "smw_query": 2,
+            "smw_page": 0,
+            "total": 28
+        },
+        "specificsStats": {
+            "intermediary": 603,
+            "domain": 1036,
+            "platform": 0,
+            "implementation": 1835,
+            "total": 3474,
+            "intermediaryPercentage": 17.4,
+            "domainPercentage": 29.8,
+            "platformPercentage": 0,
+            "implementationPercentage": 52.8
+        },
+        "graphStats": {
+            "nodes": 11,
+            "edges": 10
+        },
+        "complexity": {
+            "devModelSize": 2672,
+            "processedModelSize": 5558,
+            "generatedSize": 8130,
+            "processedModelPercentage": 208,
+            "generatedPercentage": 304.3
+        },
+        "log": {
+            "total": 5,
+            "warning": 0,
+            "error": 0,
+            "todo": 0
+        },
+        "git": {
+            "logMessage": "",
+            "shortHash": "",
+            "timestamp": ""
+        }
+    },
+    "settings": {
+        "mw_server_url": "http://wiki.cwillmes.de",
+        "mw_server_path": "",
+        "mw_server_port": false,
+        "mw_username": "mobo",
+        "mw_password": "XWufW5qNGq3BPPZ6BAgD48u5",
+        "force": false,
+        "debug": false,
+        "verbose": false,
+        "allowAdditionalProperties": false,
+        "displayTodos": true,
+        "watchFilesystem": false,
+        "serveWebApp": false,
+        "uploadWikiPages": true,
+        "deleteWikiPages": false,
+        "forceUpload": true,
+        "buildGraph": true,
+        "statistics": true,
+        "gitStatistics": false,
+        "writeExportFiles": false,
+        "compatibilityLayer": true,
+        "writeLogFile": true,
+        "uploadReport": true,
+        "uploadOutline": true,
+        "generateTemplateData": false,
+        "uploadOutlineCountRefs": false,
+        "uploadLogFile": false,
+        "overwriteImportedPages": false,
+        "logDate": true,
+        "logLongDate": false,
+        "logObjectsAsYaml": true,
+        "arrayMergeOptions": {
+            "$remove": [
+                "@unique"
+            ],
+            "enum": [
+                "@unique"
+            ],
+            "form": [
+                "@unique"
+            ],
+            "recommended": [
+                "@unique"
+            ],
+            "required": [
+                "@unique"
+            ],
+            "itemsOrder": [
+                "@unique",
+                "@prepend"
+            ],
+            "smw_categories": [
+                "@unique",
+                "@append"
+            ]
+        },
+        "uploadConcurrency": 4,
+        "webAppPort": 7000,
+        "autoRefreshWebGui": true,
+        "autoRefreshPort": 8081,
+        "headerTabs": false,
+        "formEditHelper": false,
+        "hideFormEditHelper": false,
+        "smw_semanticDrilldown": false,
+        "firstAlternativeFormAsDefault": false,
+        "arraymapSeparator": ";",
+        "defaultTemplateDisplay": "ul",
+        "useSimpleTooltipDescriptions": false,
+        "generatedByMobo": false,
+        "generatedByMoboText": "<noinclude><div class=\"mobo-generated\">This page is autogenerated, do not edit it manually!</div> [[Category:mobo-generated]]\n</noinclude>",
+        "sf_responsiveForms": false,
+        "sf_wpPreview": true,
+        "sf_wpDiff": true,
+        "sf_wpWatchthis": true,
+        "buildGraphSettings": {
+            "dataTypeNodeSize": 12,
+            "templateNodeSize": 16,
+            "modelNodeSize": 24,
+            "formNodeSize": 36,
+            "edgeWeight": 2,
+            "multipleEdgeWeight": 2
+        },
+        "cwd": "/media/christian/data/homedir/ownCloud/sciebo/dev/mobo/UserMap",
+        "importModelDir": "/media/christian/data/homedir/ownCloud/sciebo/dev/mobo/UserMap",
+        "templateDir": "/media/christian/data/homedir/ownCloud/sciebo/dev/mobo/UserMap/mobo_template/",
+        "logDir": "/media/christian/data/homedir/ownCloud/sciebo/dev/mobo/UserMap/_logfiles/",
+        "processedModelDir": "/media/christian/data/homedir/ownCloud/sciebo/dev/mobo/UserMap/_processed/"
+    },
+    "expandedField": {
+        "Address": {
+            "title": "Address",
+            "description": "A postal Address.",
+            "type": "string",
+            "id": "Address",
+            "$filepath": "/field/Address.yaml",
+            "$path": "/field/Address",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Text",
+            "target": "Address"
+        },
+        "City": {
+            "title": "City",
+            "description": "Á City.",
+            "type": "string",
+            "id": "City",
+            "$filepath": "/field/City.yaml",
+            "$path": "/field/City",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Text",
+            "target": "City"
+        },
+        "Coordinate": {
+            "title": "Coordinate",
+            "description": "A location given as WGS 84 coordinate (EPSG:4326).",
+            "type": "string",
+            "format": "Geographic coordinate",
+            "id": "Coordinate",
+            "$filepath": "/field/Coordinate.yaml",
+            "$path": "/field/Coordinate",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Geographic coordinate",
+            "target": "Coordinate"
+        },
+        "Country": {
+            "title": "Country",
+            "description": "A Country.",
+            "type": "string",
+            "format": "Page",
+            "id": "Country",
+            "$filepath": "/field/Country.yaml",
+            "$path": "/field/Country",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Page",
+            "target": "Country"
+        },
+        "Email": {
+            "title": "Email",
+            "description": "An Email-Address.",
+            "type": "string",
+            "format": "email",
+            "id": "Email",
+            "$filepath": "/field/Email.yaml",
+            "$path": "/field/Email",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Email",
+            "target": "Email"
+        },
+        "LocalChapter": {
+            "title": "LocalChapter",
+            "description": "A OSGeo local chapter.",
+            "type": "string",
+            "format": "Page",
+            "id": "LocalChapter",
+            "$filepath": "/field/LocalChapter.yaml",
+            "$path": "/field/LocalChapter",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Page",
+            "target": "LocalChapter"
+        },
+        "Name": {
+            "title": "Name",
+            "description": "Full Name.",
+            "type": "string",
+            "id": "Name",
+            "$filepath": "/field/Name.yaml",
+            "$path": "/field/Name",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Text",
+            "target": "Name"
+        },
+        "State": {
+            "title": "State",
+            "description": "Administrative region.",
+            "type": "string",
+            "id": "State",
+            "$filepath": "/field/State.yaml",
+            "$path": "/field/State",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "Text",
+            "target": "State"
+        },
+        "Website": {
+            "title": "Website",
+            "description": "A Website.",
+            "type": "string",
+            "format": "url",
+            "id": "Website",
+            "$filepath": "/field/Website.yaml",
+            "$path": "/field/Website",
+            "$modelPart": "field",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "$referenceCounter": 1,
+            "smw_type": "URL",
+            "target": "Website"
+        }
+    },
+    "expandedModel": {
+        "OSGeoMember": {
+            "title": "OSGeoMember",
+            "description": "Someone who identifies himself as a member of the OSGeo Foundation.",
+            "required": [
+                "Name",
+                "Coordinate"
+            ],
+            "id": "OSGeoMember",
+            "$filepath": "/model/OSGeoMember.yaml",
+            "$path": "/model/OSGeoMember",
+            "$modelPart": "model",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "$reference": {
+                        "path": "/field/Name",
+                        "type": "field",
+                        "filename": "Name",
+                        "id": "Name"
+                    },
+                    "title": "Name",
+                    "description": "Full Name.",
+                    "type": "string",
+                    "id": "Name",
+                    "$filepath": "/field/Name.yaml",
+                    "$path": "/field/Name",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "Address": {
+                    "$reference": {
+                        "path": "/field/Address",
+                        "type": "field",
+                        "filename": "Address",
+                        "id": "Address"
+                    },
+                    "title": "Address",
+                    "description": "A postal Address.",
+                    "type": "string",
+                    "id": "Address",
+                    "$filepath": "/field/Address.yaml",
+                    "$path": "/field/Address",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "Country": {
+                    "$reference": {
+                        "path": "/field/Country",
+                        "type": "field",
+                        "filename": "Country",
+                        "id": "Country"
+                    },
+                    "title": "Country",
+                    "description": "A Country.",
+                    "type": "string",
+                    "format": "Page",
+                    "id": "Country",
+                    "$filepath": "/field/Country.yaml",
+                    "$path": "/field/Country",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "State": {
+                    "$reference": {
+                        "path": "/field/State",
+                        "type": "field",
+                        "filename": "State",
+                        "id": "State"
+                    },
+                    "title": "State",
+                    "description": "Administrative region.",
+                    "type": "string",
+                    "id": "State",
+                    "$filepath": "/field/State.yaml",
+                    "$path": "/field/State",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "City": {
+                    "$reference": {
+                        "path": "/field/City",
+                        "type": "field",
+                        "filename": "City",
+                        "id": "City"
+                    },
+                    "title": "City",
+                    "description": "Á City.",
+                    "type": "string",
+                    "id": "City",
+                    "$filepath": "/field/City.yaml",
+                    "$path": "/field/City",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "Coordinate": {
+                    "$reference": {
+                        "path": "/field/Coordinate",
+                        "type": "field",
+                        "filename": "Coordinate",
+                        "id": "Coordinate"
+                    },
+                    "title": "Coordinate",
+                    "description": "A location given as WGS 84 coordinate (EPSG:4326).",
+                    "type": "string",
+                    "format": "Geographic coordinate",
+                    "id": "Coordinate",
+                    "$filepath": "/field/Coordinate.yaml",
+                    "$path": "/field/Coordinate",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "LocalChapter": {
+                    "$reference": {
+                        "path": "/field/LocalChapter",
+                        "type": "field",
+                        "filename": "LocalChapter",
+                        "id": "LocalChapter"
+                    },
+                    "title": "LocalChapter",
+                    "description": "A OSGeo local chapter.",
+                    "type": "string",
+                    "format": "Page",
+                    "id": "LocalChapter",
+                    "$filepath": "/field/LocalChapter.yaml",
+                    "$path": "/field/LocalChapter",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "Email": {
+                    "$reference": {
+                        "path": "/field/Email",
+                        "type": "field",
+                        "filename": "Email",
+                        "id": "Email"
+                    },
+                    "title": "Email",
+                    "description": "An Email-Address.",
+                    "type": "string",
+                    "format": "email",
+                    "id": "Email",
+                    "$filepath": "/field/Email.yaml",
+                    "$path": "/field/Email",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                },
+                "Website": {
+                    "$reference": {
+                        "path": "/field/Website",
+                        "type": "field",
+                        "filename": "Website",
+                        "id": "Website"
+                    },
+                    "title": "Website",
+                    "description": "A Website.",
+                    "type": "string",
+                    "format": "url",
+                    "id": "Website",
+                    "$filepath": "/field/Website.yaml",
+                    "$path": "/field/Website",
+                    "$modelPart": "field",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": ""
+                }
+            },
+            "$itemsOrder": [
+                "Name",
+                "Address",
+                "Country",
+                "State",
+                "City",
+                "Coordinate",
+                "LocalChapter",
+                "Email",
+                "Website"
+            ],
+            "$referenceCounter": 1
+        }
+    },
+    "expandedForm": {
+        "OSGeoMember": {
+            "title": "OSGeoMember",
+            "id": "OSGeoMember",
+            "$filepath": "/form/OSGeoMember.yaml",
+            "$path": "/form/OSGeoMember",
+            "$modelPart": "form",
+            "$abstract": false,
+            "$ignore": false,
+            "todo": "",
+            "type": "object",
+            "properties": {
+                "OSGeoMember": {
+                    "$reference": {
+                        "path": "/model/OSGeoMember",
+                        "type": "model",
+                        "filename": "OSGeoMember",
+                        "id": "OSGeoMember"
+                    },
+                    "title": "OSGeoMember",
+                    "description": "Someone who identifies himself as a member of the OSGeo Foundation.",
+                    "required": [
+                        "Name",
+                        "Coordinate"
+                    ],
+                    "id": "OSGeoMember",
+                    "$filepath": "/model/OSGeoMember.yaml",
+                    "$path": "/model/OSGeoMember",
+                    "$modelPart": "model",
+                    "$abstract": false,
+                    "$ignore": false,
+                    "todo": "",
+                    "type": "object",
+                    "properties": {
+                        "Name": {
+                            "$reference": {
+                                "path": "/field/Name",
+                                "type": "field",
+                                "filename": "Name",
+                                "id": "Name"
+                            },
+                            "title": "Name",
+                            "description": "Full Name.",
+                            "type": "string",
+                            "id": "Name",
+                            "$filepath": "/field/Name.yaml",
+                            "$path": "/field/Name",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "Address": {
+                            "$reference": {
+                                "path": "/field/Address",
+                                "type": "field",
+                                "filename": "Address",
+                                "id": "Address"
+                            },
+                            "title": "Address",
+                            "description": "A postal Address.",
+                            "type": "string",
+                            "id": "Address",
+                            "$filepath": "/field/Address.yaml",
+                            "$path": "/field/Address",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "Country": {
+                            "$reference": {
+                                "path": "/field/Country",
+                                "type": "field",
+                                "filename": "Country",
+                                "id": "Country"
+                            },
+                            "title": "Country",
+                            "description": "A Country.",
+                            "type": "string",
+                            "format": "Page",
+                            "id": "Country",
+                            "$filepath": "/field/Country.yaml",
+                            "$path": "/field/Country",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "State": {
+                            "$reference": {
+                                "path": "/field/State",
+                                "type": "field",
+                                "filename": "State",
+                                "id": "State"
+                            },
+                            "title": "State",
+                            "description": "Administrative region.",
+                            "type": "string",
+                            "id": "State",
+                            "$filepath": "/field/State.yaml",
+                            "$path": "/field/State",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "City": {
+                            "$reference": {
+                                "path": "/field/City",
+                                "type": "field",
+                                "filename": "City",
+                                "id": "City"
+                            },
+                            "title": "City",
+                            "description": "Á City.",
+                            "type": "string",
+                            "id": "City",
+                            "$filepath": "/field/City.yaml",
+                            "$path": "/field/City",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "Coordinate": {
+                            "$reference": {
+                                "path": "/field/Coordinate",
+                                "type": "field",
+                                "filename": "Coordinate",
+                                "id": "Coordinate"
+                            },
+                            "title": "Coordinate",
+                            "description": "A location given as WGS 84 coordinate (EPSG:4326).",
+                            "type": "string",
+                            "format": "Geographic coordinate",
+                            "id": "Coordinate",
+                            "$filepath": "/field/Coordinate.yaml",
+                            "$path": "/field/Coordinate",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "LocalChapter": {
+                            "$reference": {
+                                "path": "/field/LocalChapter",
+                                "type": "field",
+                                "filename": "LocalChapter",
+                                "id": "LocalChapter"
+                            },
+                            "title": "LocalChapter",
+                            "description": "A OSGeo local chapter.",
+                            "type": "string",
+                            "format": "Page",
+                            "id": "LocalChapter",
+                            "$filepath": "/field/LocalChapter.yaml",
+                            "$path": "/field/LocalChapter",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "Email": {
+                            "$reference": {
+                                "path": "/field/Email",
+                                "type": "field",
+                                "filename": "Email",
+                                "id": "Email"
+                            },
+                            "title": "Email",
+                            "description": "An Email-Address.",
+                            "type": "string",
+                            "format": "email",
+                            "id": "Email",
+                            "$filepath": "/field/Email.yaml",
+                            "$path": "/field/Email",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        },
+                        "Website": {
+                            "$reference": {
+                                "path": "/field/Website",
+                                "type": "field",
+                                "filename": "Website",
+                                "id": "Website"
+                            },
+                            "title": "Website",
+                            "description": "A Website.",
+                            "type": "string",
+                            "format": "url",
+                            "id": "Website",
+                            "$filepath": "/field/Website.yaml",
+                            "$path": "/field/Website",
+                            "$modelPart": "field",
+                            "$abstract": false,
+                            "$ignore": false,
+                            "todo": ""
+                        }
+                    },
+                    "$itemsOrder": [
+                        "Name",
+                        "Address",
+                        "Country",
+                        "State",
+                        "City",
+                        "Coordinate",
+                        "LocalChapter",
+                        "Email",
+                        "Website"
+                    ]
+                }
+            },
+            "$itemsOrder": [
+                "OSGeoMember"
+            ]
+        }
+    },
+    "graph": {
+        "nodes": {
+            "property:Address": {
+                "id": "property:Address",
+                "label": "property:Address",
+                "niceLabel": "Address",
+                "filepath": "/field/Address.yaml",
+                "description": "A postal Address.",
+                "size": 12,
+                "connections": 0,
+                "type": "string",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:City": {
+                "id": "property:City",
+                "label": "property:City",
+                "niceLabel": "City",
+                "filepath": "/field/City.yaml",
+                "description": "Á City.",
+                "size": 12,
+                "connections": 0,
+                "type": "string",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:Coordinate": {
+                "id": "property:Coordinate",
+                "label": "property:Coordinate",
+                "niceLabel": "Coordinate",
+                "filepath": "/field/Coordinate.yaml",
+                "description": "A location given as WGS 84 coordinate (EPSG:4326).",
+                "size": 12,
+                "connections": 0,
+                "type": "string-Geographic coordinate",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:Country": {
+                "id": "property:Country",
+                "label": "property:Country",
+                "niceLabel": "Country",
+                "filepath": "/field/Country.yaml",
+                "description": "A Country.",
+                "size": 12,
+                "connections": 0,
+                "type": "string-Page",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:Email": {
+                "id": "property:Email",
+                "label": "property:Email",
+                "niceLabel": "Email",
+                "filepath": "/field/Email.yaml",
+                "description": "An Email-Address.",
+                "size": 12,
+                "connections": 0,
+                "type": "string-email",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:LocalChapter": {
+                "id": "property:LocalChapter",
+                "label": "property:LocalChapter",
+                "niceLabel": "LocalChapter",
+                "filepath": "/field/LocalChapter.yaml",
+                "description": "A OSGeo local chapter.",
+                "size": 12,
+                "connections": 0,
+                "type": "string-Page",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:Name": {
+                "id": "property:Name",
+                "label": "property:Name",
+                "niceLabel": "Name",
+                "filepath": "/field/Name.yaml",
+                "description": "Full Name.",
+                "size": 12,
+                "connections": 0,
+                "type": "string",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:State": {
+                "id": "property:State",
+                "label": "property:State",
+                "niceLabel": "State",
+                "filepath": "/field/State.yaml",
+                "description": "Administrative region.",
+                "size": 12,
+                "connections": 0,
+                "type": "string",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "property:Website": {
+                "id": "property:Website",
+                "label": "property:Website",
+                "niceLabel": "Website",
+                "filepath": "/field/Website.yaml",
+                "description": "A Website.",
+                "size": 12,
+                "connections": 0,
+                "type": "string-url",
+                "color": "r=\"149\" g=\"91\" b=\"244\""
+            },
+            "template:OSGeoMember": {
+                "id": "template:OSGeoMember",
+                "label": "template:OSGeoMember",
+                "niceLabel": "OSGeoMember",
+                "filepath": "/model/OSGeoMember.yaml",
+                "description": "Someone who identifies himself as a member of the OSGeo Foundation.",
+                "type": "Model",
+                "color": "r=\"168\" g=\"242\" b=\"53\"",
+                "size": 24,
+                "connections": 0
+            },
+            "form:OSGeoMember": {
+                "id": "form:OSGeoMember",
+                "label": "form:OSGeoMember",
+                "niceLabel": "OSGeoMember",
+                "filepath": "/form/OSGeoMember.yaml",
+                "description": "",
+                "type": "Form",
+                "color": "r=\"73\" g=\"199\" b=\"232\"",
+                "size": 36,
+                "connections": 0
+            }
+        },
+        "edges": {
+            "template:OSGeoMember-template:Name": {
+                "undirectedId": "Name",
+                "label": "Name",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:Name",
+                "id": "template:OSGeoMember-template:Name"
+            },
+            "template:OSGeoMember-template:Address": {
+                "undirectedId": "Address",
+                "label": "Address",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:Address",
+                "id": "template:OSGeoMember-template:Address"
+            },
+            "template:OSGeoMember-template:Country": {
+                "undirectedId": "Country",
+                "label": "Country",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:Country",
+                "id": "template:OSGeoMember-template:Country"
+            },
+            "template:OSGeoMember-template:State": {
+                "undirectedId": "State",
+                "label": "State",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:State",
+                "id": "template:OSGeoMember-template:State"
+            },
+            "template:OSGeoMember-template:City": {
+                "undirectedId": "City",
+                "label": "City",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:City",
+                "id": "template:OSGeoMember-template:City"
+            },
+            "template:OSGeoMember-template:Coordinate": {
+                "undirectedId": "Coordinate",
+                "label": "Coordinate",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:Coordinate",
+                "id": "template:OSGeoMember-template:Coordinate"
+            },
+            "template:OSGeoMember-template:LocalChapter": {
+                "undirectedId": "LocalChapter",
+                "label": "LocalChapter",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:LocalChapter",
+                "id": "template:OSGeoMember-template:LocalChapter"
+            },
+            "template:OSGeoMember-template:Email": {
+                "undirectedId": "Email",
+                "label": "Email",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:Email",
+                "id": "template:OSGeoMember-template:Email"
+            },
+            "template:OSGeoMember-template:Website": {
+                "undirectedId": "Website",
+                "label": "Website",
+                "source": "template:OSGeoMember",
+                "weight": 2,
+                "target": "template:Website",
+                "id": "template:OSGeoMember-template:Website"
+            },
+            "form:OSGeoMember-OSGeoMember": {
+                "id": "form:OSGeoMember-OSGeoMember",
+                "undirectedId": "smwTemplate",
+                "label": "smwTemplate",
+                "source": "form:OSGeoMember",
+                "target": "template:OSGeoMember",
+                "weight": 2
+            }
+        },
+        "connections": 0
+    },
+    "generated": {
+        "property:Address": "==Description==\n<div class=\"description-box\">A postal Address.</div>\n\n* This is an attribute of the datatype [[Has type::Text]].\n",
+        "property:City": "==Description==\n<div class=\"description-box\">Á City.</div>\n\n* This is an attribute of the datatype [[Has type::Text]].\n",
+        "property:Coordinate": "==Description==\n<div class=\"description-box\">A location given as WGS 84 coordinate (EPSG:4326).</div>\n\n* This is an attribute of the datatype [[Has type::Geographic coordinate]].\n",
+        "property:Country": "==Description==\n<div class=\"description-box\">A Country.</div>\n\n* This is an attribute of the datatype [[Has type::Page]].\n",
+        "property:Email": "==Description==\n<div class=\"description-box\">An Email-Address.</div>\n\n* This is an attribute of the datatype [[Has type::Email]].\n",
+        "property:LocalChapter": "==Description==\n<div class=\"description-box\">A OSGeo local chapter.</div>\n\n* This is an attribute of the datatype [[Has type::Page]].\n",
+        "property:Name": "==Description==\n<div class=\"description-box\">Full Name.</div>\n\n* This is an attribute of the datatype [[Has type::Text]].\n",
+        "property:State": "==Description==\n<div class=\"description-box\">Administrative region.</div>\n\n* This is an attribute of the datatype [[Has type::Text]].\n",
+        "property:Website": "==Description==\n<div class=\"description-box\">A Website.</div>\n\n* This is an attribute of the datatype [[Has type::URL]].\n",
+        "category:OSGeoMember": "<div class=\"description-box\">Someone who identifies himself as a member of the OSGeo Foundation.</div>\n==Form==\nSites tagged with this category can be edited through [[Has default form::OSGeoMember|OSGeoMember]]\n\n==Tabular Overview==\n{{#ask: [[Category:OSGeoMember]]| ?Name\n| ?Address\n| ?Country\n| ?State\n| ?City\n| ?Coordinate\n| ?LocalChapter\n| ?Email\n| ?Website\n| format=broadtable\n| limit=0\n| searchlabel=Click here for a tabular overview\n}}",
+        "template:OSGeoMember": "<noinclude>==Description==\n==Usage==\n<pre>{{OSGeoMember\n|Name=\n|Address=\n|Country=\n|State=\n|City=\n|Coordinate=\n|LocalChapter=\n|Email=\n|Website=\n\\}}</pre>\n</noinclude>\n<includeonly><div class=\"wiki-ul formdata formdata-OSGeoMember\">{{#if: {{{Name|}}} | * '''Name:''' <span data-property=\"Name\">{{{Name|}}}</span> |}}{{#if: {{{Address|}}} | * '''Address:''' <span data-property=\"Address\">{{{Address|}}}</span> |}}{{#if: {{{Country|}}} | * '''Country:''' <span data-property=\"Country\">[[{{{Country|}}}|{{{Country}}}]]</span> |}}{{#if: {{{State|}}} | * '''State:''' <span data-property=\"State\">{{{State|}}}</span> |}}{{#if: {{{City|}}} | * '''City:''' <span data-property=\"City\">{{{City|}}}</span> |}}{{#if: {{{Coordinate|}}} | * '''Coordinate:''' <span data-property=\"Coordinate\">{{{Coordinate|}}}</span> |}}{{#if: {{{LocalChapter|}}} | * '''LocalChapter:''' <span data-property=\"LocalChapter\">[[{{{LocalChapter|}}}|{{{LocalChapter}}}]]</span> |}}{{#if: {{{Email|}}} | * '''Email:''' <span data-property=\"Email\">{{{Email|}}}</span> |}}{{#if: {{{Website|}}} | * '''Website:''' <span data-property=\"Website\">{{{Website|}}}</span> |}}</div> [[Name::{{{Name|}}}| ]] [[Address::{{{Address|}}}| ]] [[Country::{{{Country|}}}| ]] [[State::{{{State|}}}| ]] [[City::{{{City|}}}| ]] [[Coordinate::{{{Coordinate|}}}| ]] [[LocalChapter::{{{LocalChapter|}}}| ]] [[Email::{{{Email|}}}| ]] [[Website::{{{Website|}}}| ]] [[category:OSGeoMember]]\n\n{{OSGeoMemberUserMap-ask}}\n</includeonly>",
+        "form:OSGeoMember": "<noinclude>{{#forminput:form=OSGeoMember }}\n</noinclude>\n<includeonly><div id=\"wikiPreview\" style=\"display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;\"></div>\n\n{{{for template|OSGeoMember|OSGeoMember}}}\n{| class=\"formtable\"\n! Name:\n| {{{field|Name|size=none|class=attr_Name|input type=text|mandatory}}}\n|-\n! Address:\n| {{{field|Address|size=none|class=attr_Address|input type=text}}}\n|-\n! Country:\n| {{{field|Country|size=none|class=attr_Country|input type=text}}}\n|-\n! State:\n| {{{field|State|size=none|class=attr_State|input type=text}}}\n|-\n! City:\n| {{{field|City|size=none|class=attr_City|input type=text}}}\n|-\n! Coordinate:\n| {{{field|Coordinate|size=none|class=attr_Coordinate|input type=text|mandatory}}}\n|-\n! LocalChapter:\n| {{{field|LocalChapter|size=none|class=attr_LocalChapter|input type=text}}}\n|-\n! Email:\n| {{{field|Email|size=none|class=attr_Email|input type=text}}}\n|-\n! Website:\n| {{{field|Website|size=none|class=attr_Website|input type=text}}}\n|-\n|}\n{{{end template}}}\n==Freetext==\n{{{standard input|free text|rows=8}}}\n\n<div class=\"formbuttons\">{{{standard input|save}}}{{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|watch}}} </div></includeonly>\n",
+        "template:OSGeoMemberUserMap-ask": "<noinclude>==Usage==\n<pre>{{OSGeoMemberUserMap-ask}}</pre>\n==Query Text==\n<pre>{{#display_map:{{#show: {{FULLPAGENAME}}|?Coordinate}}|width=480|height=280|zoom=8}}</pre>\n==Query Result==\n{{#display_map:{{#show: {{FULLPAGENAME}}|?Coordinate}}|width=480|height=280|zoom=8}}\n\n<div class=\"description-box\">Note: Some querys are context dependend, those won't work on this site and show no result.</div>\n[[category:Query]][[category:ASK-Query]]\n</noinclude>\n<includeonly>{{#display_map:{{#show: {{FULLPAGENAME}}|?Coordinate}}|width=480|height=280|zoom=8}}</includeonly>\n",
+        "template:OSGeoMemberMap-ask": "<noinclude>==Usage==\n<pre>{{OSGeoMemberMap-ask}}</pre>\n==Query Text==\n<pre>{{\n#ask:\n[[Category:OSGeoMember]]\n| ?Coordinate\n| ?Name\n| ?Address\n| ?City\n| ?State\n| ?Country\n| ?LocalChapter\n| ?Website\n| ?Email\n| format=leaflet\n}}</pre>\n==Query Result==\n{{\n#ask:\n[[Category:OSGeoMember]]\n| ?Coordinate\n| ?Name\n| ?Address\n| ?City\n| ?State\n| ?Country\n| ?LocalChapter\n| ?Website\n| ?Email\n| format=leaflet\n}}\n\n<div class=\"description-box\">Note: Some querys are context dependend, those won't work on this site and show no result.</div>\n[[category:Query]][[category:ASK-Query]]\n</noinclude>\n<includeonly>{{\n#ask:\n[[Category:OSGeoMember]]\n| ?Coordinate\n| ?Name\n| ?Address\n| ?City\n| ?State\n| ?Country\n| ?LocalChapter\n| ?Website\n| ?Email\n| format=leaflet\n}}</includeonly>\n",
+        "property:subobject": "This is an attribute of the datatype [[Has type::Page]]",
+        "property:superobject": "This is an attribute of the datatype [[Has type::Page]]",
+        "User:mobo/outline": "== Generated Model Statistics ==\n* property: 9\n* category: 1\n* form: 1\n* template: 5\n* page: 0\n* total: 16\n\n==Tree Outline==\n\n===[[Form:OSGeoMember|OSGeoMember]] <span class=\"text-muted\"> - OSGeoMember</span>===\n* [[Template:OSGeoMember|OSGeoMember]] <span class=\"text-muted\"> - OSGeoMember</span>\n** [[Property:Name|Name]] <span class=\"text-muted\"> - Name</span> <span class=\"label label-danger\">string</span>\n** [[Property:Address|Address]] <span class=\"text-muted\"> - Address</span> <span class=\"label label-danger\">string</span>\n** [[Property:Country|Country]] <span class=\"text-muted\"> - Country</span> <span class=\"label label-danger\">string</span> <span class=\"label label-primary\">Page</span>\n** [[Property:State|State]] <span class=\"text-muted\"> - State</span> <span class=\"label label-danger\">string</span>\n** [[Property:City|City]] <span class=\"text-muted\"> - City</span> <span class=\"label label-danger\">string</span>\n** [[Property:Coordinate|Coordinate]] <span class=\"text-muted\"> - Coordinate</span> <span class=\"label label-danger\">string</span> <span class=\"label label-primary\">Geographic coordinate</span>\n** [[Property:LocalChapter|LocalChapter]] <span class=\"text-muted\"> - LocalChapter</span> <span class=\"label label-danger\">string</span> <span class=\"label label-primary\">Page</span>\n** [[Property:Email|Email]] <span class=\"text-muted\"> - Email</span> <span class=\"label label-danger\">string</span> <span class=\"label label-primary\">email</span>\n** [[Property:Website|Website]] <span class=\"text-muted\"> - Website</span> <span class=\"label label-danger\">string</span> <span class=\"label label-primary\">url</span>\n\n__NOTOC__\n"
+    }
+}

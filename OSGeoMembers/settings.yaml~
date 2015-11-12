@@ -1,0 +1,10 @@
+# Bot login settings
+mw_server_url: 'http://wiki.cwillmes.de'
+mw_server_path: '/'
+mw_username: 'mobo'
+mw_password: 'XWufW5qNGq3BPPZ6BAgD48u5'
+mw_server_port: false
+
+# Custom Settings
+uploadWikiPages: true
+deleteWikiPages: false

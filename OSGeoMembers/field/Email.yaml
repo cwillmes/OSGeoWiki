@@ -1,0 +1,5 @@
+title: Email
+description: An Email-Address.
+
+type: string
+format: email

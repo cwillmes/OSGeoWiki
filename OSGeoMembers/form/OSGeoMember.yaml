@@ -1,0 +1,4 @@
+title: OSGeoMember
+
+items:
+  - $extend: /model/OSGeoMember

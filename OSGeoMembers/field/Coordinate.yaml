@@ -1,0 +1,5 @@
+title: Coordinate
+description: A location given as WGS 84 coordinate (EPSG:4326).
+
+type: string
+format: Geographic coordinate

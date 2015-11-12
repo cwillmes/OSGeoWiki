@@ -1,0 +1,14 @@
+{{
+#ask:
+[[Category:OSGeoMember]]
+| ?Coordinate
+| ?Name
+| ?Address
+| ?City
+| ?State
+| ?Country
+| ?LocalChapter
+| ?Website
+| ?Email
+| format=leaflet
+}}

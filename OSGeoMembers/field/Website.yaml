@@ -1,0 +1,5 @@
+title: Website
+description: A Website.
+
+type: string
+format: url

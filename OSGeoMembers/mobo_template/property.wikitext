@@ -1,0 +1,8 @@
+{{#if description}}==Description==
+<div class="description-box">{{description}}</div>
+
+{{/if~}}
+* This is an attribute of the datatype [[Has type::{{type}}]].
+{{#each usesForms}}
+* It uses the form  „[[Has default form::{{this}}]]“.
+{{/each~}}
