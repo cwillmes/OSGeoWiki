@@ -10,5 +10,7 @@
 | ?LocalChapter
 | ?Website
 | ?Email
+| limit=10000
+| height=480
 | format=leaflet
 }}

@@ -1,1 +1,1 @@
-{{#display_map:{{#show: {{FULLPAGENAME}}|?Coordinate}}|width=480|height=280|zoom=8}}
+{{#display_map:{{#show: {{FULLPAGENAME}}|?Coordinate}}|width=480|height=280|zoom=8|service=leaflet}}
