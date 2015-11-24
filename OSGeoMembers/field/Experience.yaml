@@ -1,0 +1,11 @@
+title: Experience
+description: The members experience within the OSGeo foundation.
+
+items:
+  type: string
+  enum:
+    - Coder
+    - User
+    - PSC
+    - Committee
+    - Translate

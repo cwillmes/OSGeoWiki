@@ -1,0 +1,5 @@
+title: Photo
+description: The filename of the user photo.
+
+type: string
+
