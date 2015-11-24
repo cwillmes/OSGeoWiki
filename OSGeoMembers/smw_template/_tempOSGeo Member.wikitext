@@ -1,0 +1,19 @@
+<noinclude>==Description==
+==Usage==
+<pre>{{OSGeo Member
+|Name=
+|Address=
+|Country=
+|State=
+|City=
+|Coordinate=
+|LocalChapter=
+|Email=
+|Website=
+\}}</pre>
+</noinclude>
+<includeonly><div class="wiki-ul formdata formdata-OSGeo Member">{{#if: {{{Name|}}} | * '''Name:''' <span data-property="Name">{{{Name|}}}</span> |}}{{#if: {{{Address|}}} | * '''Address:''' <span data-property="Address">{{{Address|}}}</span> |}}{{#if: {{{Country|}}} | * '''Country:''' <span data-property="Country">[[{{{Country|}}}|{{{Country}}}]]</span> |}}{{#if: {{{State|}}} | * '''State:''' <span data-property="State">{{{State|}}}</span> |}}{{#if: {{{City|}}} | * '''City:''' <span data-property="City">{{{City|}}}</span> |}}{{#if: {{{Coordinate|}}} | * '''Coordinate:''' <span data-property="Coordinate">{{{Coordinate|}}}</span> |}}{{#if: {{{LocalChapter|}}} | * '''LocalChapter:''' <span data-property="LocalChapter">[[{{{LocalChapter|}}}|{{{LocalChapter}}}]]</span> |}}{{#if: {{{Email|}}} | * '''Email:''' <span data-property="Email">{{{Email|}}}</span> |}}{{#if: {{{Website|}}} | * '''Website:''' <span data-property="Website">{{{Website|}}}</span> |}}</div> [[Name::{{{Name|}}}| ]] [[Address::{{{Address|}}}| ]] [[Country::{{{Country|}}}| ]] [[State::{{{State|}}}| ]] [[City::{{{City|}}}| ]] [[Coordinate::{{{Coordinate|}}}| ]] [[LocalChapter::{{{LocalChapter|}}}| ]] [[Email::{{{Email|}}}| ]] [[Website::{{{Website|}}}| ]] [[category:OSGeo Member]]
+
+
+{{OSGeoMemberUserMap-ask}}
+</includeonly>

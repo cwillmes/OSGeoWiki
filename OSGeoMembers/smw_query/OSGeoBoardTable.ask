@@ -1,6 +1,6 @@
 {{
 #ask:
-[[Category:OSGeo Member]] [[Coordinate::+]]
+[[Category:OSGeo Member]] [[Category:Board]] 
 | ?Coordinate
 | ?Name
 | ?Address
@@ -10,7 +10,8 @@
 | ?LocalChapter
 | ?Website
 | ?Email
-| limit=10000
-| height=480
-| format=leaflet
+| ?Phone
+| ?Experience
+| ?Languages
+| format=broadtable
 }}

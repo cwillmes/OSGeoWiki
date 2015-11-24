@@ -1,0 +1,23 @@
+
+== {{{1}}} ==
+
+{{#if: {{{11}}} | [[File:{{{11}}}|right|border|100px|{{{1}}}]] | }} {{{14}}}
+
+
+{| 
+|-
+! style="width:60%" |  
+|-
+|{{#if: {{{3}}} | '''Address:''' {{{3}}} <br>| }}{{#if:{{{6}}} | '''Country:''' {{{6}}} <br>| }}{{#if:{{{5}}} | '''State:''' {{{5}}} <br>| }}{{#if:{{{4}}} | '''City:''' {{{4}}} <br>| }}{{#if:{{{7}}} | '''Local Chapter:''' {{{7}}} <br>| }}{{#if:{{{8}}} | '''Website:''' {{{8}}} <br>| }}{{#if:{{{9}}} | '''Email:''' {{{9}}} <br>| }}{{#if:{{{10}}} | '''Phone:''' {{{10}}} <br>| }}{{#if:{{{13}}} | '''Coordinate:''' {{{13}}} <br>| }} 
+<br>
+'''Languages:''' {{{12}}}
+<br>
+'''Experience:''' {{#if: {{{15}}} | [[File:OSGeo board.png]] | }} {{#if: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#if: {{{17}}} | [[File:OSGeo coder.png]] | }} {{#if: {{{18}}} | [[File:OSGeo psc.png]] | }} {{#if: {{{19}}} | [[File:OSGeo charter.png]] | }} {{#if: {{{20}}} | [[File:OSGeo exboard.png]] | }} {{#if: {{{21}}} | [[File:OSGeo user.png]] | }}
+|
+|{{#display_map: {{{13}}} |width=450|height=250|zoom=10|service=openlayers}}
+|-
+|}
+<br>
+
+
+

@@ -1,0 +1,16 @@
+title: OSGeo Experience
+description: Experience of a member.
+
+items:
+  - $extend: /field/User
+  - $extend: /field/Committee
+  - $extend: /field/Board
+  - $extend: /field/Coder
+  - $extend: /field/Translate
+  - $extend: /field/PSC
+  - $extend: /field/ExBoard
+  - $extend: /field/Charter
+  - $extend: /field/Chair
+
+smw_category: false
+smw_prepend: 'OSGeo experiences and roles:'

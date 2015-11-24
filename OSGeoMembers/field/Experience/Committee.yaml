@@ -1,0 +1,7 @@
+title: Committee
+description: Committee experience.
+
+type: boolean
+
+sf_form:
+  input type: checkbox

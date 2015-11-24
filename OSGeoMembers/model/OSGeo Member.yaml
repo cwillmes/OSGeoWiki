@@ -13,7 +13,6 @@ items:
   - $extend: /field/Phone
   - $extend: /field/Website
   - $extend: /field/Photo
-  - $extend: /field/Experience
   - $extend: /field/Languages
   - $extend: /field/Info
 

@@ -1,0 +1,17 @@
+{{
+#ask:
+[[Category:OSGeo Member]] [[Category:OSGeo Charter Member]] 
+| ?Coordinate
+| ?Name
+| ?Address
+| ?City
+| ?State
+| ?Country
+| ?LocalChapter
+| ?Website
+| ?Email
+| ?Phone
+| ?Experience
+| ?Languages
+| format=broadtable
+}}

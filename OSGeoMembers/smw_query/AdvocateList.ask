@@ -1,0 +1,29 @@
+{{
+#ask:
+[[Category:OSGeo Member]] [[Category:OSGeo Advocate]] 
+| ?Name
+| ?Address
+| ?City
+| ?State
+| ?Country
+| ?LocalChapter
+| ?Website
+| ?Email
+| ?Phone
+| ?Photo
+| ?Languages
+| ?Coordinate
+| ?Info
+| ?Board
+| ?Chair
+| ?Coder
+| ?PSC
+| ?Committe
+| ?Charter
+| ?ExBoard
+| ?User
+| format=template
+| template=AdvocateListTemplate
+| sort=Name
+| order=desc
+}}

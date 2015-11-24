@@ -1,0 +1,7 @@
+title: User
+description: User experience.
+
+type: boolean
+
+sf_form:
+  input type: checkbox

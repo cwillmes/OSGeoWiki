@@ -2,3 +2,4 @@ title: OSGeo Member
 
 items:
   - $extend: /model/OSGeo Member
+  - $extend: /model/OSGeo Experience
