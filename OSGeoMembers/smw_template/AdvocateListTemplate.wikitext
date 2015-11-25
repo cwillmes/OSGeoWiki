@@ -3,7 +3,6 @@
 
 {{#if: {{{11}}} | [[File:{{{11}}}|right|border|100px|{{{1}}}]] | }} {{{14}}}
 
-
 {| 
 |-
 ! style="width:60%" |  
@@ -12,12 +11,11 @@
 <br>
 '''Languages:''' {{{12}}}
 <br>
-'''Experience:''' {{#if: {{{15}}} | [[File:OSGeo board.png]] | }} {{#if: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#if: {{{17}}} | [[File:OSGeo coder.png]] | }} {{#if: {{{18}}} | [[File:OSGeo psc.png]] | }} {{#if: {{{19}}} | [[File:OSGeo charter.png]] | }} {{#if: {{{20}}} | [[File:OSGeo exboard.png]] | }} {{#if: {{{21}}} | [[File:OSGeo user.png]] | }}
+'''Experience:''' {{#ifeq: {{{15}}} | true | [[File:OSGeo board.png]] | }} {{#ifeq: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#ifeq: {{{17}}} | true | [[File:OSGeo coder.png]] | }} {{#ifeq: {{{18}}} | true | [[File:OSGeo psc.png]] | }} {{#ifeq: {{{19}}} | true | [[File:OSGeo charter.png]] | }} {{#ifeq: {{{20}}} | true | [[File:OSGeo exboard.png]] | }} {{#ifeq: {{{21}}} | true | [[File:OSGeo user.png]] | }}
 |
 |{{#display_map: {{{13}}} |width=450|height=250|zoom=10|service=openlayers}}
 |-
 |}
 <br>
-
 
 

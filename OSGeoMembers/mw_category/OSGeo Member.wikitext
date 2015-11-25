@@ -1,0 +1,24 @@
+<div class="description-box">Someone who identifies himself as a member of the OSGeo Foundation.</div>
+==Form==
+Sites tagged with this category can be edited through [[Has default form::OSGeo Member|OSGeo Member]]
+
+==Tabular Overview==
+{{#ask: [[Category:OSGeo Member]]| ?Name
+| ?Address
+| ?Country
+| ?State
+| ?City
+| ?Coordinate
+| ?LocalChapter
+| ?Email
+| ?Website
+| format=broadtable
+| limit=0
+| searchlabel=Click here for a tabular overview
+}}
+
+
+==Map==
+{{OSGeoMemberMap-ask}}
+
+Want to see yoursel fon the map? See [[OSGeo_Member_Map_documentation]]

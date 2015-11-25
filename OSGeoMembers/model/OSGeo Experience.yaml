@@ -13,4 +13,7 @@ items:
   - $extend: /field/Chair
 
 smw_category: false
-smw_prepend: 'OSGeo experiences and roles:'
+smw_display: experience 
+smw_prepend: |
+  '''OSGeo Experience and Roles:'''
+

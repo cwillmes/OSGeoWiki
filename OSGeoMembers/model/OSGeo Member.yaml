@@ -3,6 +3,8 @@ description: Someone who identifies himself as a member of the OSGeo Foundation.
 
 items:
   - $extend: /field/Name
+  - $extend: /field/JobTitle
+  - $extend: /field/Company
   - $extend: /field/Address
   - $extend: /field/Country
   - $extend: /field/State
@@ -20,3 +22,5 @@ items:
 required:
   - Name
   - Coordinate
+
+smw_display: user 
