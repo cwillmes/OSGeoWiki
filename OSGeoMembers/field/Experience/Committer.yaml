@@ -1,0 +1,7 @@
+title: Committer
+description: A Committer.
+
+type: boolean
+
+sf_form:
+  input type: checkbox

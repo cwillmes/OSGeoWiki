@@ -1,0 +1,7 @@
+title: SolKatz
+description: SolKatz award winner.
+
+type: boolean
+
+sf_form:
+  input type: checkbox

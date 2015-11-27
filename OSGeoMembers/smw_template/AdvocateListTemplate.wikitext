@@ -11,7 +11,7 @@
 <br>
 '''Languages:''' {{{12}}}
 <br>
-'''Experience:''' {{#ifeq: {{{15}}} | true | [[File:OSGeo board.png]] | }} {{#ifeq: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#ifeq: {{{17}}} | true | [[File:OSGeo coder.png]] | }} {{#ifeq: {{{18}}} | true | [[File:OSGeo psc.png]] | }} {{#ifeq: {{{19}}} | true | [[File:OSGeo charter.png]] | }} {{#ifeq: {{{20}}} | true | [[File:OSGeo exboard.png]] | }} {{#ifeq: {{{21}}} | true | [[File:OSGeo user.png]] | }}
+'''Experience:''' {{#ifeq: {{{15}}} | true | [[File:OSGeo board.png]] | }} {{#ifeq: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#ifeq: {{{17}}} | true | [[File:OSGeo coder.png]] | }} {{#ifeq: {{{18}}} | true | [[File:OSGeo psc.png]] | }} {{#ifeq: {{{19}}} | true | [[File:OSGeo charter.png]] | }} {{#ifeq: {{{20}}} | true | [[File:OSGeo exboard.png]] | }} {{#ifeq: {{{21}}} | true | [[File:OSGeo user.png]] | }} {{#ifeq: {{{22}}} | true | [[File:OSGeo Committer.png]] | }} {{#ifeq: {{{22}}} | true | [[File:OSGeo SolKatz.png]] | }}
 |
 |{{#display_map: {{{13}}} |width=450|height=250|zoom=10|service=openlayers}}
 |-

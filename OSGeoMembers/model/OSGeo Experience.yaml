@@ -11,6 +11,8 @@ items:
   - $extend: /field/ExBoard
   - $extend: /field/Charter
   - $extend: /field/Chair
+  - $extend: /field/SolKatz
+  - $extend: /field/Committer
 
 smw_category: false
 smw_display: experience 
