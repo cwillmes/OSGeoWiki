@@ -1,5 +1,58 @@
 title: LocalChapter
 description: A OSGeo local chapter.
 
+
 type: string
-format: Page
+format: page
+enum:
+- Africa Local Chapter
+- Alberta Chapter
+- Atlantic Canada Chapter
+- Aust-NZ
+- Belgium
+- Bolivia
+- Brasil
+- British Columbia Chapter
+- Canada
+- Cascadia
+- China
+- California Chapter
+- Croatia
+- Chech
+- Danmark
+- Dutch
+- Finnland
+- FOSSGIS
+- Francophone OSGeo Chapter
+- Greek
+- Hungary
+- India
+- Indonesia
+- Ireland
+- Israel
+- Italiano
+- Japan
+- Korea
+- New Mexico
+- Nigeria
+- Ottawa Chapter
+- Pacific Islands Chapter
+- Pakistan
+- PDX
+- Philadelphia
+- Phillipines
+- Poland
+- Portugal
+- Québec Chapter
+- Romanian
+- Russia Chapter
+- San Fransisco Bay Area
+- Scottland
+- Sudamerica
+- Taiwan
+- Thai
+- Twin Cities
+- Vietnam
+- Yukon Chapter
+
+
