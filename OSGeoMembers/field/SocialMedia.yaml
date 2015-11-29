@@ -1,0 +1,6 @@
+title: SocialMedia
+description: URLs to Social Media accounts.
+
+items:
+  type: string
+  format: url

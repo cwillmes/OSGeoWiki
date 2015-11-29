@@ -14,6 +14,7 @@ items:
   - $extend: /field/Email
   - $extend: /field/Phone
   - $extend: /field/InstantMessaging
+  - $extend: /field/SocialMedia
   - $extend: /field/Website
   - $extend: /field/Photo
   - $extend: /field/Languages
