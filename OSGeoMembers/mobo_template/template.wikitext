@@ -70,7 +70,7 @@
 <tr><th colspan="3">{{name}}</th></tr>
 <tr>
 <td width="25%">'''Name:'''</td><td width="50%"> {{smw_templ_attr attr.Name}} </td>
-\{{#if: {{smw_templ_attr attr.Photo}} | <td rowspan="7" width="25%"> [[File:{{smw_templ_attr attr.Photo}}]] </td> | }}
+\{{#if: {{smw_templ_attr attr.Photo}} | <td rowspan="7" width="25%"> [[File:{{smw_templ_attr attr.Photo}}|200px]] </td> | }}
 </tr>
 <tr>
 <tr>
@@ -99,6 +99,9 @@
 </tr>
 <tr>
 <td>'''Phone:'''</td><td > {{smw_templ_attr attr.Phone}} </td> 
+</tr>
+<tr>
+<td>'''Instant Messaging:'''</td><td > {{smw_templ_attr attr.InstantMessaging}} </td> 
 </tr>
 <tr>
 <td>'''Website:'''</td><td > {{smw_templ_attr attr.Website}} </td> 

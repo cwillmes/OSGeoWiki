@@ -1,22 +1,19 @@
 
-== {{{1}}} ==
+== {{{2}}} ==
 
-{{#if: {{{11}}} | [[File:{{{11}}}|right|border|100px|{{{1}}}]] | }} {{{14}}}
+{{#if: {{{11}}} | [[File:{{{11}}}|thumb|right|100px|{{{2}}}]] | }} {{{14}}}
 
 {| 
 |-
 ! style="width:60%" |  
 |-
-|{{#if: {{{3}}} | '''Address:''' {{{3}}} <br>| }}{{#if:{{{6}}} | '''Country:''' {{{6}}} <br>| }}{{#if:{{{5}}} | '''State:''' {{{5}}} <br>| }}{{#if:{{{4}}} | '''City:''' {{{4}}} <br>| }}{{#if:{{{7}}} | '''Local Chapter:''' {{{7}}} <br>| }} {{#if:{{{23}}} | '''Instant Messaging:''' {{{23}}} <br>| }} {{#if:{{{8}}} | '''Website:''' {{{8}}} <br>| }}{{#if:{{{9}}} | '''Email:''' {{{9}}} <br>| }}{{#if:{{{10}}} | '''Phone:''' {{{10}}} <br>| }}{{#if:{{{13}}} | '''Coordinate:''' {{{13}}} <br>| }} 
-<br>
-'''Languages:''' {{{12}}}
-<br>
-'''Experience:''' {{#ifeq: {{{15}}} | true | [[File:OSGeo board.png]] | }} {{#ifeq: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#ifeq: {{{17}}} | true | [[File:OSGeo coder.png]] | }} {{#ifeq: {{{18}}} | true | [[File:OSGeo psc.png]] | }} {{#ifeq: {{{19}}} | true | [[File:OSGeo charter.png]] | }} {{#ifeq: {{{20}}} | true | [[File:OSGeo exboard.png]] | }} {{#ifeq: {{{21}}} | true | [[File:OSGeo user.png]] | }} {{#ifeq: {{{22}}} | true | [[File:OSGeo Committer.png]] | }} {{#ifeq: {{{23}}} | true | [[File:OSGeo SolKatz.png]] | }}
+|{{#if: {{{2}}} | '''Name:''' {{{2}}} <br>| }} {{#if: {{{27}}} | '''Job Title:''' {{{27}}} <br>| }} {{#if: {{{28}}} | '''Company:''' {{{28}}} <br>| }} {{#if: {{{3}}} | '''Address:''' {{{3}}} <br>| }}{{#if:{{{6}}} | '''Country:''' {{{6}}} <br>| }}{{#if:{{{5}}} | '''State:''' {{{5}}} <br>| }}{{#if:{{{4}}} | '''City:''' {{{4}}} <br>| }}{{#if:{{{7}}} | '''Local Chapter:''' {{{7}}} <br>| }} {{#if:{{{25}}} | '''Instant Messaging:''' {{{25}}} <br>| }} {{#if:{{{26}}} | '''Social Media:''' {{{26}}} <br>| }} {{#if:{{{8}}} | '''Website:''' {{{8}}} <br>| }}{{#if:{{{9}}} | '''Email:''' {{{9}}} <br>| }}{{#if:{{{10}}} | '''Phone:''' {{{10}}} <br>| }}{{#if:{{{13}}} | '''Coordinate:''' {{{13}}} <br>| }} 
+'''Languages:''' {{{12}}} <br>
+{{#if: {{{1}}} | '''OSGeo Wiki user page:''' {{{1}}} <br>| }} 
+'''Experience:''' {{#ifeq: {{{15}}} | true | [[File:OSGeo board.png]] | }} {{#ifeq: {{{16}}} | [[File:OSGeo chair.png]] | }} {{#ifeq: {{{17}}} | true | [[File:OSGeo coder.png]] | }} {{#ifeq: {{{18}}} | true | [[File:OSGeo psc.png]] | }} {{#ifeq: {{{19}}} | true | [[File:OSGeo charter.png]] | }} {{#ifeq: {{{20}}} | true | [[File:OSGeo charter.png]] | }} {{#ifeq: {{{21}}} | true | [[File:OSGeo exboard.png]] | }} {{#ifeq: {{{22}}} | true | [[File:OSGeo user.png]] | }} {{#ifeq: {{{23}}} | true | [[File:OSGeo Committer.png]] | }} {{#ifeq: {{{24}}} | true | [[File:OSGeo SolKatz.png]] | }}
 |
-|{{#display_map: {{{13}}} |width=450|height=250|zoom=10|service=openlayers}}
+|{{#display_map: {{{13}}} |width=450|height=250|zoom=4|service=openlayers}}
 |-
 |}
 <br>
-
-
 

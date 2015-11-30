@@ -22,8 +22,14 @@
 | ?Charter
 | ?ExBoard
 | ?User
+| ?Committer
+| ?SolKatz
+| ?InstantMessaging
+| ?SocialMedia
+| ?JobTitle
+| ?Company
 | format=template
 | template=AdvocateListTemplate
 | sort=Name
-| order=desc
+| order=asc
 }}
