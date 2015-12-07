@@ -1,6 +1,6 @@
 {{
 #ask:
-[[Category:OSGeo Member]] [[Category:OSGeo Advocate]] 
+[[Category:OSGeo Member]] [[Category:Board]] 
 | ?Name
 | ?Address
 | ?City
@@ -29,7 +29,7 @@
 | ?JobTitle
 | ?Company
 | format=template
-| template=AdvocateListTemplate
+| template=BoardListTemplate
 | limit=2300
 | sort=Name
 | order=asc

@@ -7,11 +7,12 @@ format: page
 enum:
 - Africa Local Chapter
 - Alberta Chapter
+- Argentinia
 - Atlantic Canada Chapter
 - Aust-NZ
 - Belgium
 - Bolivia
-- Brasil
+- Brazil
 - British Columbia Chapter
 - Canada
 - Cascadia
@@ -33,8 +34,10 @@ enum:
 - GFOSS.it
 - Japan
 - Korea
+- Mexico
 - New Mexico
 - Nigeria
+- North America
 - Norway
 - OSGeo-es
 - OSGeo.NL
@@ -52,6 +55,7 @@ enum:
 - Russia Chapter
 - San Fransisco Bay Area
 - Scottland
+- Southeast US
 - Sudamerica
 - Taiwan
 - Thai

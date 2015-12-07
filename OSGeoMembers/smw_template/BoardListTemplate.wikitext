@@ -18,8 +18,7 @@
 {{{14}}}
 </td>
 <td>
-<span style="float:right">{{#display_map: {{{13}}} |width=300|height=200|zoom=4|service=leaflet}}</span>
+<span style="float:right">{{#display_map: {{{13}}} |width=300|height=200|zoom=4|service=openlayers}}</span>
 </td>
 </tr>
 </table>
-
